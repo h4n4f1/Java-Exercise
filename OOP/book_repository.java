@@ -3,24 +3,20 @@ package OOP;
 import java.util.Scanner;
 
 public class book_repository {
-
-    book_repository() {
-        this.setbook("Java Basics", "John", 54);
-    }
-
+//fixed
     book_repository(String x, String y, int z) {
         this.setbook(x, y, z);
     }
 
-    private String title;
-    private String author;
-    private int price;
+    private String title = "Java Basics";
+    private String author = "John";
+    private int price = 54;
 
     public void setbook(String x, String y, int z) {
         this.title = x;
         this.author = y;
         if (z < 0) {
-            System.out.println("Invalid price. Price not changed. Current price: " + z);
+            System.out.println("Invalid price. Price not changed. Current price: " + this.price);
             return;
         } else {
             this.price = z;
