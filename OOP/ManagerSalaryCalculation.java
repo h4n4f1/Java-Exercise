@@ -1,16 +1,16 @@
 package OOP;
 
-class Employee {
+class Employee2 {
     String name;
     int baseSalary;
 
-    public Employee(String name, int baseSalary) {
+    public Employee2(String name, int baseSalary) {
         this.name = name;
         this.baseSalary = baseSalary;
     }
 }
 
-class Manager extends Employee {
+class Manager extends Employee2 {
     int bonus;
 
     public Manager(String name, int baseSalary, int bonus) {
