@@ -2,7 +2,7 @@ package OOP;
 import java.util.Scanner;
 
 class BankAccount {
-    private double balance = 0;
+    protected double balance = 0;
 
     public BankAccount(double balance) {
         this.balance = balance;
