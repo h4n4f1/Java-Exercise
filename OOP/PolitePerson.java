@@ -12,10 +12,10 @@ class Person {
     }
 }
 
-class Student extends Person {
+class Student1 extends Person {
     String grade;
 
-    public Student(String name, String grade){
+    public Student1(String name, String grade){
         super(name);
         this.grade = grade;
     }
@@ -28,7 +28,7 @@ class Student extends Person {
 
 public class PolitePerson {
     public static void main(String[] args) {
-        Student s = new Student("Amit", "10th Grade"); 
+        Student1 s = new Student1("Amit", "10th Grade"); 
         s.displayDetails();
     }
 }

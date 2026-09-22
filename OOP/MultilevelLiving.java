@@ -1,18 +1,18 @@
 package OOP;
 
-class Animal {
+class Animal1 {
     public void eat() {
         System.out.println("This animal eats food.");
     }
 }
 
-class Mammal extends Animal {
+class Mammal extends Animal1 {
     public void walk() {
         System.out.println("This mammal walks on land.");
     }
 }
 
-class Dog extends Mammal {
+class Dog1 extends Mammal {
     public void bark() {
         System.out.println("The dog barks.");
     }
@@ -20,7 +20,7 @@ class Dog extends Mammal {
 
 public class MultilevelLiving {
     public static void main(String[] args) {
-        Dog d = new Dog(); 
+        Dog1 d = new Dog1(); 
         d.eat(); 
         d.walk(); 
         d.bark();
