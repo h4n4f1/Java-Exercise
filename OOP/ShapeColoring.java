@@ -1,14 +1,14 @@
 package OOP;
 
-class Shape {
+class Shape2 {
     String color;
 
-    public Shape(String color) {
+    public Shape2(String color) {
         this.color = color;
     }
 }
 
-class Triangle extends Shape {
+class Triangle extends Shape2 {
     double base;
     double height;
 
@@ -24,7 +24,7 @@ class Triangle extends Shape {
     }
 }
 
-class Square extends Shape {
+class Square extends Shape2 {
     double side;
 
     public Square(String color, double side) {
