@@ -1,4 +1,5 @@
 package OOP;
+import java.util.Scanner;
 
 abstract class Employee {
     abstract void displayName();
@@ -28,7 +29,16 @@ class FullTimeEmployee extends Employee implements Taxable {
 
 public class TaxCompliance {
     public static void main(String[] args) {
-        FullTimeEmployee emp = new FullTimeEmployee("Karan", 80000); 
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("insert name: ");
+        String name = s.nextLine();
+
+        System.out.print("insert salary: ");
+        double salary = s.nextDouble();
+
+        FullTimeEmployee emp = new FullTimeEmployee(name, salary); 
+
         emp.displayName(); 
         emp.calculateTax();
     }
