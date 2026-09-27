@@ -41,5 +41,7 @@ public class TaxCompliance {
 
         emp.displayName(); 
         emp.calculateTax();
+
+        s.close();
     }
 }
